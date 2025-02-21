@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walidov</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+            background-image: url('https://i.imgur.com/qWUyOj6.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .link-button-container { /* Added container */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the buttons horizontally */
+            width: 100%; /* Take full width */
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 8px 16px;
+            margin-bottom: 12px;
+            width: 80%;
+            max-width: 350px;
+            text-decoration: none;
+            color: #fff;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+                .link-button img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-right: 12px;
+            object-fit: cover;
+        }
+
+        .link-button span {
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .telegram-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .telegram-button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .made-by {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        @media (max-width: 600px) {
+            .link-button {
+                width: 95%;
+            }
+            .telegram-button {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-image">
+            <img src="https://i.imgur.com/XFcQ48x.jpeg" alt="Main Image">
+        </div>
+
+        <div class="profile-name">ALEKSANDR</div>
+
+        <div class="link-button-container">
+            <a href="https://t.me/preispodna666" class="link-button">
+                <img src="https://i.imgur.com/mYa7N21.jpeg" alt="Prise">
+                <span>Bio</span>
+            </a>
+
+            <a href="https://t.me/broybio666" class="link-button">
+                <img src="https://i.imgur.com/RDBia0p.jpeg" alt="Prise">
+                <span>Channel</span>
+            </a>
+        </div>
+
+
+        <a href="https://t.me/ALEKSANDR_WEROR" class="telegram-button">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+
+        <div class="made-by">
+            Made by <a href="https://t.me/RebikNew" style="color: rgba(255, 255, 255, 0.5); text-decoration: none;">@RebikNew</a>
+        </div>
+    </div>
+</body>
+</html>
